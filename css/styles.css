@@ -1,0 +1,44 @@
+body {
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #212529;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #9fba4c !important;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  font-weight: 600;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+.navbar-brand .brand-logo {
+  height: 42px;
+  width: auto;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 600;
+}
+
+.hero-subtitle {
+  max-width: 720px;
+}
