@@ -1,9 +1,16 @@
 body {
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
-  background-color: #f8fafc;
+  background-color: #e3e3e3;
   color: #212529;
   line-height: 1.6;
   min-height: 100vh;
+}
+
+main .container {
+  background-color: rgba(159, 186, 76, 0.94);
+  border-radius: 1rem;
+  padding: clamp(2rem, 4vw, 3rem);
+  box-shadow: 0 1rem 2.5rem rgba(15, 23, 42, 0.15);
 }
 
 .navbar {
@@ -41,4 +48,19 @@ body {
 
 .hero-subtitle {
   max-width: 720px;
+}
+
+.account-type .account-heading {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  letter-spacing: 0.25rem;
+}
+
+.account-type .account-card {
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.account-type .account-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(16, 24, 40, 0.1);
 }

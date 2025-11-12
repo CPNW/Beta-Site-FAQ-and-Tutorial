@@ -16,7 +16,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="shadow-sm">
@@ -40,7 +40,10 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
               <a class="nav-link" href="#">FAQs</a>
@@ -54,7 +57,9 @@
 
     <main class="py-5">
       <div class="container text-center">
-        <p class="text-uppercase text-primary fw-semibold mb-2">Clinical Placements Northwest</p>
+        <p class="text-uppercase text-primary fw-semibold mb-2">
+          Clinical Placements Northwest
+        </p>
         <h1 class="hero-title mb-3">
           Welcome to the Clinical Placements Northwest FAQ and Tutorial Website
         </h1>
@@ -62,9 +67,51 @@
           Explore clear answers, onboarding steps, and resources that make it easy to navigate
           clinical placements across the region.
         </p>
-        <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
-          <a class="btn btn-primary btn-lg" href="#">Get Started</a>
-          <a class="btn btn-outline-primary btn-lg" href="#">Browse Tutorials</a>
+        <div class="account-type mt-5">
+          <p class="text-uppercase text-muted fw-semibold mb-3 account-heading">
+            Choose your account type
+          </p>
+          <div class="row g-3 justify-content-center">
+            <div class="col-12 col-md-4">
+              <a
+                class="card h-100 shadow-sm text-decoration-none account-card"
+                href="views/education-views/educational-coordinator.html"
+              >
+                <div class="card-body">
+                  <h3 class="card-title h5 mb-2">Educational Coordinator</h3>
+                  <p class="card-text text-muted">
+                    Upload student rosters, manage placements, and track compliance tasks for your programs.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-4">
+              <a
+                class="card h-100 shadow-sm text-decoration-none account-card"
+                href="views/healthcare-views/healthcare-coordinator.html"
+              >
+                <div class="card-body">
+                  <h3 class="card-title h5 mb-2">Healthcare Coordinator</h3>
+                  <p class="card-text text-muted">
+                    Review incoming cohorts, assign clinical sites, and communicate onboarding requirements.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-4">
+              <a
+                class="card h-100 shadow-sm text-decoration-none account-card"
+                href="views/student-views/student.html"
+              >
+                <div class="card-body">
+                  <h3 class="card-title h5 mb-2">Student</h3>
+                  <p class="card-text text-muted">
+                    Access tutorials, complete compliance steps, and stay informed throughout your placement.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </main>
