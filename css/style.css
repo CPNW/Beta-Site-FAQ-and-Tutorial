@@ -102,6 +102,13 @@ main .container {
   display: block;
 }
 
+.requirement-divider {
+  border: 0;
+  border-top: 1px solid rgba(159, 186, 76, 0.4);
+  margin: 1.25rem 0 1rem;
+  opacity: 0.8;
+}
+
 .requirement-card > * + * {
   margin-top: 0.75rem;
 }
