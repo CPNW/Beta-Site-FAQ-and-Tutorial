@@ -113,6 +113,82 @@ main .container {
   margin-top: 0.75rem;
 }
 
+.faq-search {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0.85rem;
+  padding: clamp(1rem, 3vw, 1.75rem);
+  box-shadow: 0 0.5rem 1.5rem rgba(15, 23, 42, 0.08);
+}
+
+.faq-search-input .input-group-text {
+  background: transparent;
+  border-right: 0;
+  color: #6b7280;
+}
+
+.faq-search-input .form-control {
+  border-left: 0;
+  padding: 0.85rem 1rem;
+}
+
+.faq-search-results {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.25rem;
+}
+
+.faq-search-results .faq-result-card {
+  display: block;
+  text-decoration: none;
+  border: 1px solid rgba(159, 186, 76, 0.35);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.faq-search-results .faq-result-card + .faq-result-card {
+  margin-top: 0.75rem;
+}
+
+.faq-search-results .faq-result-card:hover,
+.faq-search-results .faq-result-card:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 0.75rem 1.25rem rgba(15, 23, 42, 0.1);
+}
+
+.faq-result-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.faq-result-card p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.faq-result-card .faq-result-tags {
+  margin-top: 0.65rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.faq-result-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(159, 186, 76, 0.15);
+  color: #55610f;
+  border-radius: 999px;
+  padding: 0.15rem 0.65rem;
+}
+
+.faq-match-hidden {
+  display: none !important;
+}
+
 .watermark-card {
   padding: 0;
   overflow: hidden;

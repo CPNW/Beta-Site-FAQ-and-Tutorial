@@ -65,6 +65,41 @@
           </p>
         </div>
 
+        <section class="faq-search mb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <label for="faqSearchInput" class="form-label text-uppercase small fw-semibold text-muted"
+                >Search FAQs &amp; Guides</label
+              >
+              <div class="input-group faq-search-input">
+                <span class="input-group-text" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24">
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m21 21-4.35-4.35M4 11a7 7 0 1 0 14 0 7 7 0 0 0-14 0Z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  id="faqSearchInput"
+                  type="search"
+                  class="form-control"
+                  placeholder="Try “WATCH report”, “requirements”, or “dashboard”"
+                  aria-describedby="faqSearchHelp"
+                  autocomplete="off"
+                />
+              </div>
+              <p id="faqSearchHelp" class="text-muted small mt-2 mb-0">
+                Results update automatically while you type and include related student articles.
+              </p>
+            </div>
+          </div>
+          <div id="faqSearchResults" class="faq-search-results mt-4" aria-live="polite"></div>
+        </section>
+
         <div class="accordion" id="studentFaqAccordion">
           <div class="accordion-item">
             <h2 class="accordion-header" id="faqOneHeading">
@@ -213,5 +248,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="../../../js/student-faq-search.js"></script>
   </body>
 </html>
