@@ -189,6 +189,42 @@ main .container {
   display: none !important;
 }
 
+.education-article {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 1rem;
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+  box-shadow: 0 1.5rem 3rem rgba(15, 23, 42, 0.15);
+}
+
+.education-article h2 {
+  font-weight: 600;
+}
+
+.education-article img {
+  border-radius: 0.85rem;
+}
+
+.assignment-split {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 0.85rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+@media (min-width: 992px) {
+  .assignment-split {
+    display: flex;
+  }
+  .assignment-panel {
+    padding-right: 2rem;
+  }
+  .assignment-panel.right-panel {
+    border-left: 1px solid rgba(15, 23, 42, 0.08);
+    padding-left: 2rem;
+    padding-right: 0;
+  }
+}
+
 .watermark-card {
   padding: 0;
   overflow: hidden;

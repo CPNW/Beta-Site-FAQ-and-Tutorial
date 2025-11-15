@@ -40,7 +40,10 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
             <div class="navbar-nav">
               <a class="nav-link" href="../../../index.html">Home</a>
               <a class="nav-link" href="#">FAQs</a>
@@ -60,20 +63,29 @@
           </p>
           <h1 class="hero-title mb-3">Student FAQs</h1>
           <p class="lead text-muted hero-subtitle mx-auto">
-            Quick answers to the most common onboarding, compliance, and dashboard questions students ask as they get ready
-            for clinical placements.
+            Quick answers to the most common onboarding, compliance, and
+            dashboard questions students ask as they get ready for clinical
+            placements.
           </p>
         </div>
 
         <section class="faq-search mb-5">
           <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
-              <label for="faqSearchInput" class="form-label text-uppercase small fw-semibold text-muted"
+              <label
+                for="faqSearchInput"
+                class="form-label text-uppercase small fw-semibold text-muted"
                 >Search FAQs &amp; Guides</label
               >
               <div class="input-group faq-search-input">
                 <span class="input-group-text" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
                     <path
                       stroke="currentColor"
                       stroke-linecap="round"
@@ -93,11 +105,16 @@
                 />
               </div>
               <p id="faqSearchHelp" class="text-muted small mt-2 mb-0">
-                Results update automatically while you type and include related student articles.
+                Results update automatically while you type and include related
+                student articles.
               </p>
             </div>
           </div>
-          <div id="faqSearchResults" class="faq-search-results mt-4" aria-live="polite"></div>
+          <div
+            id="faqSearchResults"
+            class="faq-search-results mt-4"
+            aria-live="polite"
+          ></div>
         </section>
 
         <div class="accordion" id="studentFaqAccordion">
@@ -111,7 +128,7 @@
                 aria-expanded="true"
                 aria-controls="faqOneCollapse"
               >
-                How do I reset my CPNW password or update my 2FA method?
+                How do I reset my CPNW password?
               </button>
             </h2>
             <div
@@ -121,9 +138,51 @@
               data-bs-parent="#studentFaqAccordion"
             >
               <div class="accordion-body">
-                Use the “Forgot Password” link on the login page to reset your password. Once you sign back in, go to
-                <strong>My Account &gt; My Security Settings</strong> to update your two-factor authentication delivery
-                preference (text, authenticator app, etc.).
+                <p>
+                  You must already have an active CPNW account to reset your
+                  password.
+                </p>
+                <ol class="mb-3">
+                  <li>
+                    Go to
+                    <a
+                      href="https://beta.cpnw.org/"
+                      target="_blank"
+                      rel="noopener"
+                      >beta.cpnw.org</a
+                    >
+                    and select <strong>Login</strong>.
+                  </li>
+                  <li>
+                    At the bottom of the login form, click the
+                    <strong>Forgot your password?</strong> link.
+                  </li>
+                  <li>
+                    Enter the email address on your CPNW profile and follow the
+                    prompts to send a reset email.
+                  </li>
+                  <li>
+                    Open the message from CPNW (check spam/junk folders) and use
+                    the link to choose a new password before it expires.
+                  </li>
+                </ol>
+                <p class="mb-1"><strong>Password requirements:</strong></p>
+                <ul class="mb-0">
+                  <li>At least 10 total characters</li>
+                  <li>
+                    One uppercase letter, one lowercase letter, and one number
+                  </li>
+                  <li>
+                    One special character — accepted symbols are <code>!</code>
+                    <code>@</code> <code>#</code> <code>$</code>
+                    <code>&amp;</code> <code>*</code>
+                  </li>
+                </ul>
+                <p class="text-muted small mt-2 mb-0">
+                  Still stuck? Email
+                  <a href="mailto:support@cpnw.org">support@cpnw.org</a> from
+                  your CPNW registered email address so the team can help.
+                </p>
               </div>
             </div>
           </div>
@@ -138,7 +197,7 @@
                 aria-expanded="false"
                 aria-controls="faqTwoCollapse"
               >
-                My Requirements list shows a red status—what should I do?
+                What do the Requirement status icons mean?
               </button>
             </h2>
             <div
@@ -148,9 +207,50 @@
               data-bs-parent="#studentFaqAccordion"
             >
               <div class="accordion-body">
-                A red status indicates something is overdue, expired, or missing documentation. Open the requirement, read
-                the instructions carefully, and upload the requested files (vaccination record, lab result, form, etc.).
-                Once submitted, the requirement will move to “Pending Review” until a coordinator approves it.
+                <p class="mb-2">
+                  In your requirements table, the second column is the Status
+                  Column. Each requirement status shows a specific icon that
+                  indicates exactly where it stands:
+                </p>
+                <ul class="mb-3">
+                  <li>
+                    <strong>Approved</strong> &mdash; Green checkmark.
+                    Everything looks good and no further action is needed.
+                  </li>
+                  <li>
+                    <strong>Conditionally Approved</strong> &mdash; Yellow
+                    checkmark. Accepted temporarily but additional documentation
+                    or doses are expected.
+                  </li>
+                  <li>
+                    <strong>Rejected</strong> &mdash; Red circle with a slash.
+                    Something is wrong or missing; read the coordinator’s notes
+                    and upload the requested correction.
+                  </li>
+                  <li>
+                    <strong>Waiver</strong> &mdash; Asterisk icon. A
+                    site-approved waiver is on file.
+                  </li>
+                  <li>
+                    <strong>Expired</strong> &mdash; Red hourglass. Your
+                    documentation is out of date and must be renewed.
+                  </li>
+                  <li>
+                    <strong>Expiring</strong> &mdash; Exclamation point. The
+                    item is about to expire—update it before the deadline.
+                  </li>
+                </ul>
+                <p class="mb-0">
+                  For any status other than the green checkmark, open the
+                  requirement to read the detailed instructions or coordinator
+                  comments, then upload or edit the needed information until it
+                  returns to Approved. Requirements that show "Not Submitted"
+                  means the requirement has not yet been completed. Requirements
+                  that show "Submitted" indicates that you have completed the
+                  requirement and it is awaiting review. Requirements that show
+                  "In Review" means the requirement is under review at this
+                  time.
+                </p>
               </div>
             </div>
           </div>
@@ -165,7 +265,7 @@
                 aria-expanded="false"
                 aria-controls="faqThreeCollapse"
               >
-                How do I find the emails from Checkr or WATCH?
+                How do I find the emails from Checkr?
               </button>
             </h2>
             <div
@@ -175,9 +275,13 @@
               data-bs-parent="#studentFaqAccordion"
             >
               <div class="accordion-body">
-                Check the email address listed in your CPNW demographics. Emails may go to spam/junk, so look there as
-                well. If you still cannot find the message, contact your program coordinator to have the link reissued. Keep
-                in mind that the Checkr link expires after 7 days.
+                Check your CPNW registered email address. Emails may go to
+                spam/junk, so look there as well. You will get an invite from
+                Checkr every day for 7 days or until you accept the invite and
+                complete your background check. If you still cannot find the
+                message, contact your program coordinator to have the link
+                reissued. Keep in mind that the Checkr link expires after 7
+                days.
               </div>
             </div>
           </div>
@@ -192,7 +296,8 @@
                 aria-expanded="false"
                 aria-controls="faqFourCollapse"
               >
-                When will I get access to my clinical schedule and placement details?
+                I’m not receiving my email verification link or 2FA code—what
+                should I do?
               </button>
             </h2>
             <div
@@ -202,9 +307,31 @@
               data-bs-parent="#studentFaqAccordion"
             >
               <div class="accordion-body">
-                Schedules are released by your program or healthcare partner once all compliance requirements are cleared.
-                Watch the Dashboard notifications and emails from your coordinator for the official “ready” status and any
-                next steps.
+                <p class="mb-2">
+                  <strong>First, check every junk/spam folder.</strong>
+                  Automated verification emails are often filtered by your email
+                  provider, especially on mobile devices. If you don’t see a
+                  spam folder on your phone, sign in on a computer where it’s
+                  easier to access.
+                </p>
+                <p class="mb-2">
+                  Add <a href="mailto:cpnw@cpnw.org">cpnw@cpnw.org</a> and
+                  <a href="mailto:support@cpnw.org">support@cpnw.org</a> to your
+                  email contacts/safe-sender list so future codes land in your
+                  inbox.
+                </p>
+                <p class="mb-2">
+                  Large schools or hospitals sometimes delay inbound messages.
+                </p>
+                <p class="mb-0">
+                  After you regain access, you can change the delivery method
+                  you prefer by going to
+                  <strong
+                    >My Dashboard &gt; My Account &gt; My Security
+                    Settings</strong
+                  >
+                  and updating your verification preferences.
+                </p>
               </div>
             </div>
           </div>
@@ -219,7 +346,8 @@
                 aria-expanded="false"
                 aria-controls="faqFiveCollapse"
               >
-                Who should I contact if I have trouble uploading documents or navigating CPNW?
+                Who should I contact if I have trouble uploading documents or
+                navigating CPNW?
               </button>
             </h2>
             <div
@@ -229,16 +357,20 @@
               data-bs-parent="#studentFaqAccordion"
             >
               <div class="accordion-body">
-                Start with your program coordinator—they can advise on documentation requirements and escalate to CPNW
-                support when needed. You can also email <a href="mailto:support@cpnw.org">support@cpnw.org</a> with your full
-                name, program, and a description of the issue.
+                Start with your program coordinator—they can advise on
+                documentation requirements and escalate to CPNW support when
+                needed. You can also email
+                <a href="mailto:support@cpnw.org">support@cpnw.org</a> with your
+                full name, program, and a description of the issue.
               </div>
             </div>
           </div>
         </div>
 
         <div class="text-center mt-4">
-          <a class="btn btn-outline-light" href="../student.html">Back to Student Guides</a>
+          <a class="btn btn-outline-light" href="../student.html"
+            >Back to Student Guides</a
+          >
         </div>
       </div>
     </main>
