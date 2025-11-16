@@ -71,6 +71,41 @@
           </p>
         </div>
 
+        <section class="faq-search mb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <label for="educationFaqSearchInput" class="form-label text-uppercase small fw-semibold text-muted"
+                >Search FAQs &amp; Guides</label
+              >
+              <div class="input-group faq-search-input">
+                <span class="input-group-text" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24">
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m21 21-4.35-4.35M4 11a7 7 0 1 0 14 0 7 7 0 0 0-14 0Z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  id="educationFaqSearchInput"
+                  type="search"
+                  class="form-control"
+                  placeholder='Try "assign students", "WATCH", or "requirements"'
+                  aria-describedby="educationFaqSearchHelp"
+                  autocomplete="off"
+                />
+              </div>
+              <p id="educationFaqSearchHelp" class="text-muted small mt-2 mb-0">
+                Results update automatically while you type and highlight matching FAQs or suggest detailed guides.
+              </p>
+            </div>
+          </div>
+          <div id="educationFaqSearchResults" class="faq-search-results mt-4" aria-live="polite"></div>
+        </section>
+
         <div class="accordion" id="educationFaqAccordion">
           <div class="accordion-item">
             <h2 class="accordion-header" id="eduFaqOneHeading">
@@ -82,7 +117,7 @@
                 aria-expanded="true"
                 aria-controls="eduFaqOneCollapse"
               >
-                How do I request a new coordinator account or update my access?
+                How do I add an additional coordinator to the program(s) I have administrative access to?
               </button>
             </h2>
             <div
@@ -92,7 +127,7 @@
               data-bs-parent="#educationFaqAccordion"
             >
               <div class="accordion-body">
-                Submit the <strong>Coordinator Account Request</strong> form provided by your institution. Include program names and sites you support so CPNW can assign permissions. If you need additional access later, email <a href="mailto:support@cpnw.org">support@cpnw.org</a> with the programs to add or remove.
+                Email <a href="mailto:support@cpnw.org">support@cpnw.org</a> with the new coordinator's name and email address. Support will reply with registration instructions. After they complete registration, contact Support again so we can finalize the account and apply the same administrative permissions you have for the program(s).
               </div>
             </div>
           </div>
@@ -142,7 +177,7 @@
               data-bs-parent="#educationFaqAccordion"
             >
               <div class="accordion-body">
-                Use the <strong>Background + WATCH Reports</strong> tool to initiate Checkr and CPNW WATCH services. CPNW reviewers finalize the status once results arrive. Coordinators can override rejections when their site approves an exception; otherwise the rejection stands and may block placements.
+                If your program subscribes to CPNW WATCH and/or Checkr services, follow the steps outlined in the <a href="education-articles/background-watch-reports.html" class="text-decoration-underline">Background + WATCH Reports</a> guide to initiate both checks, review confirmation modals, and monitor reviewer decisions. For programs running independent background checks or WATCH reports, coordinators are responsible for verifying student completion, reviewing the documents, and marking the requirements accordingly.
               </div>
             </div>
           </div>
@@ -167,7 +202,7 @@
               data-bs-parent="#educationFaqAccordion"
             >
               <div class="accordion-body">
-                Yes—click the <strong>Requirements</strong> link on the Dashboard, then <strong>Create Requirement</strong>. Choose the category (Forms, Site Orientations, Insurance, or Licenses), target the correct programs, and publish once instructions are complete.
+                Yes—click the <strong>Requirements</strong> link on the Dashboard, then <strong>Create Requirement</strong>. Follow the detailed walkthrough in the <a href="education-articles/create-education-requirement.html" class="text-decoration-underline">Create Education Requirements</a> guide to pick the right category (Forms, Site Orientations, Insurance, or Licenses), target programs, add instructions, and publish.
               </div>
             </div>
           </div>
@@ -192,7 +227,7 @@
               data-bs-parent="#educationFaqAccordion"
             >
               <div class="accordion-body">
-                Open the <strong>Assignments</strong> table. Search or page to find a student, click the <strong>+</strong> icon to add a row, choose the location, set start/end dates, and save. To assign multiple students, select their checkboxes and use <strong>Assign Group</strong>.
+                Open the <strong>Assignments</strong> table. Search or page to find a student, click the <strong>+</strong> icon to add a row, choose the location, set start/end dates, and save. To assign multiple students, select their checkboxes and use <strong>Assign Group</strong>. See the full walkthrough in <a href="education-articles/assigning-students.html" class="text-decoration-underline">Assigning Students to Clinical Sites</a>.
               </div>
             </div>
           </div>
@@ -220,7 +255,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-      
-      <script src="../../js/site-footer.js"></script>
+    <script src="../../js/education-faq-search.js"></script>
+    <script src="../../js/site-footer.js"></script>
 </body>
 </html>
