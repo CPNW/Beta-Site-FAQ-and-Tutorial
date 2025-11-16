@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../../../css/style.css" />
   </head>
   <body>
-    <header class="shadow-sm">
+    <header class="shadow-lg">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="../../../index.html">
@@ -46,7 +46,16 @@
           >
             <div class="navbar-nav">
               <a class="nav-link" href="../../../index.html">Home</a>
-              <a class="nav-link" href="#">FAQs</a>
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  FAQs
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="../../education-views/education-faq.html">Education Coordinator FAQ</a></li>
+                  <li><a class="dropdown-item" href="#">Healthcare Coordinator FAQ</a></li>
+                  <li><a class="dropdown-item" href="student-faq.html">Student FAQ</a></li>
+                </ul>
+              </div>
               <a class="nav-link" href="#">Tutorials</a>
               <a class="nav-link" href="mailto:support@cpnw.org">Contact</a>
             </div>
@@ -80,7 +89,7 @@
         </section>
 
         <div class="requirements-grid">
-          <article class="requirement-card shadow-sm">
+          <article class="requirement-card shadow-lg">
             <h2>Independent WATCH</h2>
             <p class="text-muted">
               An annual Washington State Patrol (WATCH) background check is required. Your program has selected that
@@ -104,7 +113,7 @@
               />
             </figure>
           </article>
-          <article class="requirement-card shadow-sm">
+          <article class="requirement-card shadow-lg">
             <h2>CPNW WATCH</h2>
             <p class="text-muted">
               If your program has CPNW conduct the WATCH, no action is required from you. CPNW runs the report and updates
@@ -123,7 +132,7 @@
             </figure>
           </article>
 
-          <article class="requirement-card shadow-sm">
+          <article class="requirement-card shadow-lg">
             <h2>Independent Background Check</h2>
             <p class="text-muted">
               Your program requires you to obtain and upload a background check
@@ -151,7 +160,7 @@
               />
             </figure>
           </article>
-          <article class="requirement-card shadow-sm">
+          <article class="requirement-card shadow-lg">
             <h2>Checkr Background Check</h2>
             <p class="text-muted">
               Some programs process background checks via CPNW’s partnership
@@ -180,7 +189,7 @@
             </figure>
           </article>
 
-          <article class="requirement-card shadow-sm">
+          <article class="requirement-card shadow-lg">
             <h2>Hepatitis B</h2>
             <p class="text-muted">
               CPNW requires evidence of Hepatitis B immunity via a positive
@@ -231,7 +240,7 @@
             </figure>
           </article>
 
-          <article class="requirement-card shadow-sm">
+          <article class="requirement-card shadow-lg">
             <h2>Tuberculin</h2>
             <p class="text-muted">
               Provide proof of TB screening results dated within one year of
@@ -273,14 +282,14 @@
             </figure>
           </article>
 
-          <article class="requirement-card shadow-sm watermark-card d-none d-lg-flex">
+          <article class="requirement-card shadow-lg watermark-card d-none d-lg-flex">
             <img
               src="../../../images/student-article-images/student-requirements-images/spores-card.png"
               alt="Decorative spores pattern"
             />
           </article>
 
-          <article class="requirement-card shadow-sm">
+          <article class="requirement-card shadow-lg">
             <h2>MMR / MMRV</h2>
             <p class="text-muted">
               Provide documentation showing you are immune to Measles, Mumps, and Rubella (and Varicella if reporting MMRV).
@@ -310,7 +319,7 @@
             </figure>
           </article>
 
-          <article class="requirement-card shadow-sm">
+          <article class="requirement-card shadow-lg">
             <h2>Varicella (Chickenpox)</h2>
             <p class="text-muted">
               Meet the Varicella requirement by submitting either two vaccination records or a positive immunity titer.
@@ -337,7 +346,7 @@
             </figure>
           </article>
 
-          <article class="requirement-card shadow-sm">
+          <article class="requirement-card shadow-lg">
             <h2>Tetanus, Diphtheria & Pertussis (Tdap)</h2>
             <p class="text-muted">
               Provide proof of receiving the Tdap vaccine. A Td or Tdap booster
@@ -362,7 +371,7 @@
             </figure>
           </article>
 
-          <article class="requirement-card shadow-sm">
+          <article class="requirement-card shadow-lg">
             <h2>Influenza</h2>
             <p class="text-muted">
               An annual flu vaccine is required each season (usually due by the
@@ -397,7 +406,7 @@
             </figure>
           </article>
 
-          <article class="requirement-card shadow-sm">
+          <article class="requirement-card shadow-lg">
             <h2>COVID-19</h2>
             <p class="text-muted">
               Upload your entire COVID-19 vaccination history. Some clinical
@@ -423,7 +432,7 @@
             </figure>
           </article>
 
-          <article class="requirement-card shadow-sm">
+          <article class="requirement-card shadow-lg">
             <h2>BLS Provider Course</h2>
             <p class="text-muted">
               Maintain an active <strong>AHA</strong> BLS credential (in-person
@@ -448,7 +457,7 @@
             </figure>
           </article>
 
-          <article class="requirement-card shadow-sm">
+          <article class="requirement-card shadow-lg">
             <h2>Criminal History Disclosure</h2>
             <p class="text-muted">
               Complete the CPNW Criminal History Disclosure form every year you
@@ -484,10 +493,22 @@
       </div>
     </main>
 
+    <hr class="quote-divider" />
+    <blockquote class="site-quote text-muted" data-inspiration-quote></blockquote>
+
+    <footer class="site-footer text-center py-4">
+      <div class="container">
+        <p class="mb-1">&copy; <span data-current-year></span> Clinical Placements Northwest</p>
+        <a href="mailto:support@cpnw.org" class="text-white text-decoration-none">support@cpnw.org</a>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-  </body>
+    
+      <script src="../../../js/site-footer.js"></script>
+</body>
 </html>

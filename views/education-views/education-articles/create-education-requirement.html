@@ -40,10 +40,42 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
             <div class="navbar-nav">
               <a class="nav-link" href="../../../index.html">Home</a>
-              <a class="nav-link" href="#">FAQs</a>
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  FAQs
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="../education-faq.html"
+                      >Education Coordinator FAQ</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Healthcare Coordinator FAQ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../student-views/student-articles/student-faq.html"
+                      >Student FAQ</a
+                    >
+                  </li>
+                </ul>
+              </div>
               <a class="nav-link" href="#">Tutorials</a>
               <a class="nav-link" href="mailto:support@cpnw.org">Contact</a>
             </div>
@@ -55,89 +87,191 @@
     <main class="py-5">
       <div class="container">
         <div class="mb-4 text-center">
-          <p class="text-uppercase text-primary fw-semibold mb-2">Educational Coordinator Guide</p>
+          <p class="text-uppercase text-primary fw-semibold mb-2">
+            Educational Coordinator Guide
+          </p>
           <h1 class="hero-title mb-3">Create an Educational Requirement</h1>
           <p class="lead text-muted hero-subtitle mx-auto">
-            Build program-specific requirements for students or faculty—from naming and targeting the requirement to choosing the right category options.
+            Build program-specific requirements for students or faculty—from
+            naming and targeting the requirement to choosing the right category
+            options.
           </p>
         </div>
 
-        <article class="education-article">
-          <figure class="mb-4">
-            <img
-              src="../../../images/education-article-images/requirement-table.png"
-              alt="Educational requirement table"
-              class="w-100 rounded hero-illustration"
-            />
-          </figure>
+        <div class="text-center mb-4">
+          <img
+            src="../../../images/education-article-images/requirement-table.png"
+            alt="Educational requirement table"
+            class="img-fluid rounded hero-illustration"
+          />
+        </div>
 
-          <section class="mb-4">
+        <section class="card shadow-lg border-0 mb-3">
+          <div class="card-body">
             <h2 class="h4">Review existing requirements</h2>
-            <ol>
-              <li>On the Dashboard, click the <strong>Requirements</strong> link.</li>
-              <li>The Requirements table lists each item you have already built, showing Name, Type, Frequency, Date Created, Status (Active/Inactive), and action buttons for Edit/Delete.</li>
-              <li>If you need to edit or retire an item, use the buttons in this table. Otherwise, click <strong>Create Requirement</strong> above the grid to start fresh.</li>
+            <ol class="text-muted ps-3 mb-0">
+              <li>
+                On the Dashboard, click the <strong>Requirements</strong> link.
+              </li>
+              <li>
+                The Requirements table lists each item you have already built,
+                showing Name, Type, Frequency, Date Created, Status, and quick
+                Edit/Delete actions.
+              </li>
+              <li>
+                If you need to edit or retire an item, use the buttons in this
+                table. Otherwise, click
+                <strong>Create Requirement</strong> above the grid to start
+                fresh.
+              </li>
             </ol>
-          </section>
+          </div>
+        </section>
 
-          <section class="mb-4">
+        <section class="card shadow-lg border-0 mb-3">
+          <div class="card-body">
             <div class="row gy-4 align-items-start">
               <div class="col-12 col-lg-6">
                 <h2 class="h4">Complete the Create Requirement form</h2>
-            <ol>
-              <li><strong>Name</strong>: Enter the requirement title students/faculty will see.</li>
-              <li><strong>Required By</strong>: Select the schools/programs that must complete this requirement.</li>
-              <li><strong>Category</strong>: Choose the template that fits (Forms, Site Orientations, Insurance, or Licenses). Leave the sub-category blank when working in Education unless instructed otherwise.</li>
-              <li><strong>Frequency</strong>: Decide whether the requirement is due <em>Annually</em> or only <em>Once</em>.</li>
-              <li><strong>User Type</strong>: Target <em>Faculty</em>, <em>Students</em>, or both.</li>
-              <li><strong>Abbr</strong>: Provide a short code used on internal tables.</li>
-              <li><strong>Status</strong>: Set to <em>Active</em> to make it visible; leave as <em>Inactive</em> while drafting.</li>
-            </ol>
-            <p class="mb-0">
-              The right-hand panel lets you upload reference files students can download and includes a large text area for instructions. Use it to spell out exactly what proof or steps you expect.
-            </p>
+                <ol class="text-muted ps-3">
+                  <li>
+                    <strong>Name</strong>: Enter the requirement title
+                    students/faculty will see.
+                  </li>
+                  <li>
+                    <strong>Required By</strong>: Select the schools/programs
+                    that must complete this requirement.
+                  </li>
+                  <li>
+                    <strong>Category</strong>: Choose the template that fits
+                    (Forms, Site Orientations, Insurance, or Licenses). Leave
+                    sub-category blank unless CPNW asks for a specific value.
+                  </li>
+                  <li>
+                    <strong>Frequency</strong>: Decide whether the requirement
+                    is due <em>Annually</em> or only <em>Once</em>.
+                  </li>
+                  <li>
+                    <strong>User Type</strong>: Target <em>Faculty</em>,
+                    <em>Students</em>, or both.
+                  </li>
+                  <li>
+                    <strong>Abbr</strong>: Provide a short code used on internal
+                    tables.
+                  </li>
+                  <li>
+                    <strong>Status</strong>: Set to <em>Active</em> to make it
+                    visible; leave as <em>Inactive</em> while drafting.
+                  </li>
+                </ol>
+                <p class="text-muted mb-0">
+                  The right-hand panel lets you upload reference files students
+                  can download and includes a large text area for instructions.
+                  Spell out exactly what proof or steps you expect.
+                </p>
               </div>
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-lg-6 text-center">
                 <img
                   src="../../../images/education-article-images/create-education-requirement.png"
                   alt="Create requirement form fields"
-                  class="w-100 rounded education-form-illustration"
+                  class="border border-1 border-dark img-fluid rounded education-form-illustration"
                 />
               </div>
             </div>
-          </section>
-
-          <section class="mb-4">
-            <h2 class="h4">Category-specific guidance</h2>
-            <ul>
-              <li><strong>Site Orientations</strong>: Informational only—users cannot upload documentation. Add text or downloadable orientation packets. Enable the &ldquo;auto approve&rdquo; checkbox if you want the requirement to mark complete as soon as the user clicks Save.</li>
-              <li><strong>Forms</strong>: Use when students must upload a document (e.g., signed PDF, driver&rsquo;s license). Leave the sub-category blank.</li>
-              <li><strong>Insurance</strong>: For facilities that demand proof of liability coverage. Choose between <em>Insurance verified by program</em> (program supplies coverage) or <em>Individual Insurance</em> (user uploads policy + expiration date).</li>
-              <li><strong>Licenses</strong>: Ideal for faculty or graduate students with active healthcare licenses. After selecting <em>Yes</em>, capture license type, issuing state, number, expiration date, and optionally upload supporting files. Use <strong>+ Add another license</strong> for multiple entries.</li>
-            </ul>
-          </section>
-
-          <section class="mb-4">
-            <h2 class="h4">Publish and maintain</h2>
-            <ul>
-              <li>Upload any reference documents students need to review before submitting.</li>
-              <li>For Site Orientations or other auto-approved requirements, double-check the instructions field to ensure students understand the informational purpose.</li>
-              <li>Switch the Status to <em>Active</em> only when you are ready for coordinators, students, or faculty to see the requirement. Inactive items remain hidden.</li>
-              <li>Edit the requirement anytime from the main table; changes take effect immediately for anyone assigned to that program.</li>
-            </ul>
-          </section>
-
-          <div class="text-center mt-4">
-            <a class="btn btn-outline-light" href="../educational-coordinator.html">Back to Coordinator Hub</a>
           </div>
-        </article>
+        </section>
+
+        <section class="card shadow-lg border-0 mb-3">
+          <div class="card-body">
+            <h2 class="h4">Category-specific guidance</h2>
+            <ul class="text-muted ps-3 mb-0">
+              <li>
+                <strong>Site Orientations</strong>: Informational only—users
+                cannot upload documentation. Add text or downloadable
+                orientation packets. Enable auto-approve if you want it to
+                complete as soon as the user clicks Save.
+              </li>
+              <li>
+                <strong>Forms</strong>: Use when students must upload a document
+                (e.g., signed PDF, driver’s license). Leave sub-category blank.
+              </li>
+              <li>
+                <strong>Insurance</strong>: For facilities that demand proof of
+                liability coverage. Choose between
+                <em>Insurance verified by program</em> or
+                <em>Individual Insurance</em> (user uploads policy + expiration
+                date).
+              </li>
+              <li>
+                <strong>Licenses</strong>: Ideal for faculty or graduate
+                students with active healthcare licenses. Collect license type,
+                issuing state, number, expiration date, and supporting files.
+                Use <strong>+ Add another license</strong> as needed.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="card shadow-lg border-0 mb-4">
+          <div class="card-body">
+            <h2 class="h4">Publish and maintain</h2>
+            <ul class="text-muted ps-3 mb-0">
+              <li>
+                Upload any reference documents students need to review before
+                submitting.
+              </li>
+              <li>
+                Double-check instructions for informational requirements so
+                students understand the purpose.
+              </li>
+              <li>
+                Switch the Status to <em>Active</em> when you are ready for
+                coordinators, students, or faculty to see the requirement.
+                Inactive items remain hidden.
+              </li>
+              <li>
+                Edit the requirement anytime from the main table; changes take
+                effect immediately for everyone assigned to that program.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="text-center mt-4">
+          <a
+            class="btn btn-outline-light"
+            href="../educational-coordinator.html"
+            >Back to Education Guides</a
+          >
+        </div>
       </div>
     </main>
+
+    <hr class="quote-divider" />
+    <blockquote
+      class="site-quote text-muted"
+      data-inspiration-quote
+    ></blockquote>
+
+    <footer class="site-footer text-center py-4">
+      <div class="container">
+        <p class="mb-1">
+          &copy; <span data-current-year></span> Clinical Placements Northwest
+        </p>
+        <a
+          href="mailto:support@cpnw.org"
+          class="text-white text-decoration-none"
+          >support@cpnw.org</a
+        >
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="../../../js/site-footer.js"></script>
   </body>
 </html>

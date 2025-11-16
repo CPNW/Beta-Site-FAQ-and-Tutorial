@@ -29,24 +29,20 @@
               class="brand-logo"
             />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <div class="navbar-nav">
               <a class="nav-link" href="../../../index.html">Home</a>
-              <a class="nav-link" href="#">FAQs</a>
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">FAQs</a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="../education-faq.html">Education Coordinator FAQ</a></li>
+                  <li><a class="dropdown-item" href="#">Healthcare Coordinator FAQ</a></li>
+                  <li><a class="dropdown-item" href="../../student-views/student-articles/student-faq.html">Student FAQ</a></li>
+                </ul>
+              </div>
               <a class="nav-link" href="#">Tutorials</a>
               <a class="nav-link" href="mailto:support@cpnw.org">Contact</a>
             </div>
@@ -58,94 +54,69 @@
     <main class="py-5">
       <div class="container">
         <div class="mb-4 text-center">
-          <p class="text-uppercase text-primary fw-semibold mb-2">
-            Educational Coordinator Guide
-          </p>
+          <p class="text-uppercase text-primary fw-semibold mb-2">Educational Coordinator Guide</p>
           <h1 class="hero-title mb-3">Assign Students to Clinical Sites</h1>
           <p class="lead text-muted hero-subtitle mx-auto">
-            Use the Assignments table to place individual students or entire
-            cohorts at the correct facility for the right rotation block.
+            Use the Assignments table to place individual students or entire cohorts at the correct facility for the right rotation block.
           </p>
         </div>
 
-        <article class="education-article">
-          <figure class="mb-4">
-            <img
-              src="../../../images/education-article-images/assignments-table.png"
-              alt="Assignments table overview"
-              class="w-100 rounded shadow-sm"
-            />
-          </figure>
+        <div class="text-center mb-4">
+          <img
+            src="../../../images/education-article-images/assignments-table.png"
+            alt="Assignments table overview"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+
+        <section class="mb-4">
           <div class="row g-4 align-items-start assignment-split">
             <div class="col-12 col-lg-6 assignment-panel">
-              <h2 class="h4">Assign an Individual Student</h2>
-              <ol>
-                <li>
-                  Use the search bar above the Assignments table (right column)
-                  to locate the student. If needed, use the paginator below the
-                  table to move between pages.
-                </li>
-                <li>
-                  Click the <strong>+</strong> icon to create a new assignment.
-                  Never edit a previous assignment to create a new one.
-                </li>
-                <li>
-                  In the <strong>Location</strong> column, choose the clinical
-                  site where the student will be placed.
-                </li>
-                <li>
-                  Enter the rotation <strong>Start Date</strong> and
-                  <strong>End Date</strong> in their respective columns so
-                  onsite teams know the exact window.
-                </li>
-                <li>
-                  Click the floppy disk icon to save. The row immediately
-                  reflects the new assignment and can be edited if corrections
-                  are needed.
-                </li>
+              <h2 class="h4">Assign an individual student</h2>
+              <ol class="text-muted ps-3">
+                <li>Use the search bar above the Assignments table to locate the student. If needed, use the paginator below the table to move between pages.</li>
+                <li>Click the <strong>+</strong> icon to create a new assignment. Never edit a previous row to repurpose it.</li>
+                <li>In the <strong>Location</strong> column, choose the clinical site where the student will be placed and confirm unit/department details if prompted.</li>
+                <li>Enter the rotation <strong>Start Date</strong> and <strong>End Date</strong> so onsite teams know the exact window.</li>
+                <li>Click the floppy disk icon to save. The row immediately reflects the new assignment and can be edited if corrections are needed.</li>
               </ol>
             </div>
             <div class="col-12 col-lg-6 assignment-panel right-panel">
-              <h2 class="h4">Assign a Group of Students</h2>
-              <ol>
-                <li>
-                  Use the page selector beneath the Assignments table or the search bar above it to locate the students you
-                  want to place.
-                </li>
-                <li>
-                  Check the box beside each student’s name. Once at least two are selected, the <strong>Assign Group</strong> button
-                  activates.
-                </li>
-                <li>
-                  Click <strong>Assign Group</strong>. A modal window appears prompting you to choose the healthcare facility and set
-                  the shared start/end dates.
-                </li>
-                <li>
-                  After completing the fields, click <strong>Assign Group</strong> inside the modal to save the assignments.
-                </li>
-                <li>
-                  Need to update a block later? Select the same students and choose <strong>Edit Group</strong> to reopen the modal and
-                  change the facility or dates.
-                </li>
+              <h2 class="h4">Assign a group of students</h2>
+              <ol class="text-muted ps-3">
+                <li>Use the page selector beneath the table or the search bar above it to locate the students you want to place.</li>
+                <li>Check the box beside each student’s name. Once at least two are selected, the <strong>Assign Group</strong> button activates.</li>
+                <li>Click <strong>Assign Group</strong> to open the modal, choose the healthcare facility, and set the shared start/end dates.</li>
+                <li>After completing the fields, click <strong>Assign Group</strong> inside the modal to save the assignments.</li>
+                <li>Need to update a block later? Select the same students and choose <strong>Edit Group</strong> to reopen the modal and change the facility or dates.</li>
               </ol>
             </div>
           </div>
+        </section>
 
-          <div class="text-center mt-4">
-            <a
-              class="btn btn-outline-light"
-              href="../educational-coordinator.html"
-              >Back to Coordinator Hub</a
-            >
-          </div>
-        </article>
+        <div class="text-center mt-4">
+          <a class="btn btn-outline-light" href="../educational-coordinator.html">Back to Education Guides</a>
+        </div>
       </div>
     </main>
+
+    <hr class="quote-divider" />
+    <blockquote class="site-quote text-muted" data-inspiration-quote></blockquote>
+
+    <footer class="site-footer text-center py-4">
+      <div class="container">
+        <p class="mb-1">&copy; <span data-current-year></span> Clinical Placements Northwest</p>
+        <a href="mailto:support@cpnw.org" class="text-white text-decoration-none">support@cpnw.org</a>
+      </div>
+    </footer>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-  </body>
+      
+      <script src="../../../js/site-footer.js"></script>
+</body>
 </html>

@@ -46,7 +46,16 @@
           >
             <div class="navbar-nav">
               <a class="nav-link" href="../../../index.html">Home</a>
-              <a class="nav-link" href="#">FAQs</a>
+              <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  FAQs
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="../../education-views/education-faq.html">Education Coordinator FAQ</a></li>
+                  <li><a class="dropdown-item" href="#">Healthcare Coordinator FAQ</a></li>
+                  <li><a class="dropdown-item" href="student-faq.html">Student FAQ</a></li>
+                </ul>
+              </div>
               <a class="nav-link" href="#">Tutorials</a>
               <a class="nav-link" href="mailto:support@cpnw.org">Contact</a>
             </div>
@@ -69,27 +78,6 @@
           </p>
         </div>
 
-        <section class="mb-4">
-          <h2 class="h5 mb-3">Accessing the Requirements list</h2>
-          <ol class="text-muted ps-3">
-            <li>
-              From the dashboard, open the <strong>My Records</strong> panel on
-              the left and click <strong>Requirements</strong>.
-            </li>
-            <li>
-              Filter the list by <em>All</em>, <em>Outstanding</em>, or
-              <em>Completed</em> to focus on what needs attention.
-            </li>
-            <li>
-              Each entry displays the requirement name, current status, and
-              expiration date (if the requirement is due annually). When
-              scrolling left to right, it also shows the type of requirement,
-              frequency (annual or once), the category, and who reviewed
-              (approved, rejected, etc..) the requirement.
-            </li>
-          </ol>
-        </section>
-
         <div class="text-center mb-4">
           <img
             src="../../../images/student-article-images/student-requirements-images/requirements-table.png"
@@ -97,72 +85,68 @@
             class="img-fluid rounded shadow"
           />
           <p class="text-muted small mt-2">
-            Use the column headers to sort by Requirement Name, Status,
-            Expiration, Type, Frequency, or Category. Scroll horizontally to
-            view every column and action.
+            <strong>Tip:</strong> Use the column headers to sort by Requirement
+            Name, Status, Expiration, Type, Frequency, or Category. Scroll
+            horizontally to view every column and action.
           </p>
         </div>
 
-        <section class="mb-4">
-          <h3 class="h5 mb-3">Opening requirement details</h3>
-          <ul class="text-muted ps-3">
-            <li>
-              Click the requirement name (first column) to open details.
-              eLearning modules launch in a new browser tab so you can complete
-              the training.
-            </li>
-            <li>
-              All other requirements open a modal with instructions, linked
-              documents to download, submission or declination fields (when
-              applicable), an <strong>Upload Documentation</strong> link, and a
-              <strong>Save</strong> button.
-            </li>
-            <li>
-              Use the message board on the right side of the requirements view
-              to communicate with your program coordinator, facility
-              coordinator, or CPNW Reviewer (where applicable).
-            </li>
-          </ul>
+        <section class="card shadow-lg border-0 mb-3">
+          <div class="card-body">
+            <h2 class="h5 mb-3">Accessing the Requirements list</h2>
+            <ol class="text-muted ps-3 mb-0">
+              <li>
+                From the dashboard, open the <strong>My Records</strong> panel on the left and click <strong>Requirements</strong>.
+              </li>
+              <li>
+                Filter the list by <em>All</em>, <em>Outstanding</em>, or <em>Completed</em> to focus on what needs attention.
+              </li>
+              <li>
+                Each entry displays the requirement name, current status, and expiration date (if the requirement is due annually). When scrolling left to right, it also shows the type of requirement, frequency, category, and reviewer.
+              </li>
+            </ol>
+          </div>
         </section>
 
-        <section class="mb-4">
-          <h3 class="h5 mb-3">Uploading documentation</h3>
-          <ul class="text-muted ps-3">
-            <li>
-              Use the <strong>Upload</strong> button within each requirement to
-              attach immunization records, or other required documentation.
-            </li>
-            <li>
-              Supported formats include PDF, JPG, and PNG, Excel Spreadsheets
-              (.xlsx), and Word Documents (.docx).
-            </li>
-            <li>
-              After submission, the item shows as <em>Pending Review</em> until
-              a coordinator approves it. You will see comments if additional
-              information is needed.
-            </li>
-          </ul>
+        <section class="card shadow-lg border-0 mb-3">
+          <div class="card-body">
+            <h3 class="h5 mb-3">Opening requirement details</h3>
+            <ul class="text-muted ps-3 mb-0">
+              <li>
+                Click the requirement name (first column) to open details. eLearning modules launch in a new browser tab so you can complete the training.
+              </li>
+              <li>
+                All other requirements open a modal with instructions, linked documents to download, submission or declination fields, an <strong>Upload Documentation</strong> link, and a <strong>Save</strong> button.
+              </li>
+              <li>
+                Use the message board on the right side of the requirements view to communicate with your program coordinator, facility coordinator, or CPNW Reviewer.
+              </li>
+            </ul>
+          </div>
         </section>
 
-        <section class="mb-4">
-          <h3 class="h5 mb-3">Completing eLearning modules</h3>
-          <p class="text-muted">
-            eLearning modules appear in the Requirements list and will open in a
-            new browser tab when clicked.
-          </p>
-          <ol class="text-muted ps-3">
-            <li>
-              Launch each module, review all sections, and pass the quiz. You
-              must score 80 or better to pass. You may take the quiz as many
-              times as necessary to pass.
-            </li>
-            <li>
-              Once finished, the module automatically records the completion.
-              Your status, score and expiration date will be updated to the
-              requirements table. You may have to refresh your browser window to
-              see the updated information.
-            </li>
-          </ol>
+        <section class="card shadow-lg border-0 mb-3">
+          <div class="card-body">
+            <h3 class="h5 mb-3">Uploading documentation</h3>
+            <ul class="text-muted ps-3 mb-0">
+              <li>Use the <strong>Upload</strong> button within each requirement to attach immunization records or other required documentation.</li>
+              <li>Supported formats include PDF, JPG, PNG, Excel (.xlsx), and Word (.docx).</li>
+              <li>After submission, the item shows as <em>Pending Review</em> until a coordinator approves it. Watch for comments if additional information is needed.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="card shadow-lg border-0 mb-4">
+          <div class="card-body">
+            <h3 class="h5 mb-3">Completing eLearning modules</h3>
+            <p class="text-muted">
+              eLearning modules appear in the Requirements list and open in a new browser tab when clicked.
+            </p>
+            <ol class="text-muted ps-3 mb-0">
+              <li>Launch each module, review all sections, and pass the quiz. You must score 80 or better to pass, and you can retake it as needed.</li>
+              <li>Once finished, the module automatically records the completion. Status, score, and expiration date update on the requirements table; refresh the page if needed.</li>
+            </ol>
+          </div>
         </section>
 
         <div class="text-center mt-5">
@@ -183,10 +167,21 @@
       </div>
     </main>
 
+    <hr class="quote-divider" />
+    <blockquote class="site-quote text-muted" data-inspiration-quote></blockquote>
+
+    <footer class="site-footer text-center py-4">
+      <div class="container">
+        <p class="mb-1">&copy; <span data-current-year></span> Clinical Placements Northwest</p>
+        <a href="mailto:support@cpnw.org" class="text-white text-decoration-none">support@cpnw.org</a>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-  </body>
+      <script src="../../../js/site-footer.js"></script>
+</body>
 </html>
