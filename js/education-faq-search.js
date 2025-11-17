@@ -47,10 +47,22 @@ document.addEventListener("DOMContentLoaded", () => {
       tags: ["requirements", "forms", "site orientations", "insurance"],
     },
     {
+      title: "Create an Insurance Requirement",
+      description: "Step-by-step instructions for building liability insurance requirements that align with affiliation agreements.",
+      url: "education-articles/create-insurance-requirement.html",
+      tags: ["insurance", "liability", "requirements", "coverage"],
+    },
+    {
+      title: "Create a License Requirement",
+      description: "Collect faculty or graduate student license details and documents through the Licenses requirement category.",
+      url: "education-articles/create-license-requirement.html",
+      tags: ["licenses", "credentials", "faculty", "students"],
+    },
+    {
       title: "Review Submissions",
-      description: "Use the Review table to inspect uploads, document decisions, and send messages.",
+      description: "Use the Review table to inspect uploads, mark Verification Complete, and signal healthcare partners via the Verified column.",
       url: "education-articles/review-submissions.html",
-      tags: ["review", "uploads", "decisions", "needs review"],
+      tags: ["review", "verification complete", "verified", "needs review"],
     },
   ];
 
