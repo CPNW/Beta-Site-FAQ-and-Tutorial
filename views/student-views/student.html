@@ -73,8 +73,48 @@
             throughout your placement.
           </p>
         </div>
+        <section class="faq-search mb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <label
+                for="studentGuideSearchInput"
+                class="form-label text-uppercase small fw-semibold text-muted"
+                >Search Student Guides</label
+              >
+              <div class="input-group faq-search-input">
+                <span class="input-group-text" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24">
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m21 21-4.35-4.35M4 11a7 7 0 1 0 14 0 7 7 0 0 0-14 0Z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  id="studentGuideSearchInput"
+                  type="search"
+                  class="form-control"
+                  placeholder='Try "register", "dashboard", or "requirements"'
+                  aria-describedby="studentGuideSearchHelp"
+                  autocomplete="off"
+                />
+              </div>
+              <p id="studentGuideSearchHelp" class="text-muted small mt-2 mb-0">
+                Start typing to see matching tutorials and jump straight to the page you need.
+              </p>
+            </div>
+          </div>
+          <div
+            id="studentGuideSearchResults"
+            class="faq-search-results mt-4 faq-match-hidden"
+            aria-live="polite"
+          ></div>
+        </section>
         <div class="row g-4">
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-student-guide="register" data-guide-tags="register,account,profile">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="student-articles/how-to-register.html"
@@ -90,7 +130,7 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-student-guide="dashboard" data-guide-tags="dashboard,notifications,overview">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="student-articles/student-dashboard.html"
@@ -105,7 +145,7 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-student-guide="requirements" data-guide-tags="requirements,uploads,status">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="student-articles/student-requirements.html"
@@ -120,7 +160,7 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-student-guide="elearning" data-guide-tags="elearning,modules,courses">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="student-articles/student-elearning-modules.html"
@@ -135,7 +175,7 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-student-guide="cpnw-requirements" data-guide-tags="checklist,watch,immunizations">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="student-articles/student-cpnw-requirements.html"
@@ -150,7 +190,7 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-student-guide="faq" data-guide-tags="faq,questions,help">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="student-articles/student-faq.html"
@@ -188,6 +228,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="../../js/student-guide-search.js"></script>
       <script src="../../js/site-footer.js"></script>
 </body>
 </html>

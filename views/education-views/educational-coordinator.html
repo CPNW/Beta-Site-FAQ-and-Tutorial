@@ -75,8 +75,48 @@
             Explore coordinator guides for dashboards, account approvals, assignments, background services, and custom requirements.
           </p>
         </div>
+        <section class="faq-search mb-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <label
+                for="educationGuideSearchInput"
+                class="form-label text-uppercase small fw-semibold text-muted"
+                >Search Guides</label
+              >
+              <div class="input-group faq-search-input">
+                <span class="input-group-text" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24">
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m21 21-4.35-4.35M4 11a7 7 0 1 0 14 0 7 7 0 0 0-14 0Z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  id="educationGuideSearchInput"
+                  type="search"
+                  class="form-control"
+                  placeholder='Try "dashboard", "assignments", or "background"'
+                  aria-describedby="educationGuideSearchHelp"
+                  autocomplete="off"
+                />
+              </div>
+              <p id="educationGuideSearchHelp" class="text-muted small mt-2 mb-0">
+                Start typing to filter guides and jump directly to the article you need.
+              </p>
+            </div>
+          </div>
+          <div
+            id="educationGuideSearchResults"
+            class="faq-search-results mt-4 faq-match-hidden"
+            aria-live="polite"
+          ></div>
+        </section>
         <div class="row g-4">
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-guide-id="dashboard" data-guide-tags="dashboard,notifications,admin">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="education-articles/educational-dashboard.html"
@@ -92,7 +132,7 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-guide-id="account-requests" data-guide-tags="accounts,users,access">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="education-articles/approving-account-requests.html"
@@ -107,7 +147,7 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-guide-id="assign-students" data-guide-tags="assign,placements,clinical">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="education-articles/assigning-students.html"
@@ -122,7 +162,7 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-guide-id="background-watch" data-guide-tags="background,watch,checkr">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="education-articles/background-watch-reports.html"
@@ -138,7 +178,7 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-guide-id="review-submissions" data-guide-tags="review,verification,requirements">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="education-articles/review-submissions.html"
@@ -154,7 +194,7 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-guide-id="create-education" data-guide-tags="requirements,builder,templates">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="education-articles/create-education-requirement.html"
@@ -169,7 +209,7 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-guide-id="create-insurance" data-guide-tags="insurance,liability,forms">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="education-articles/create-insurance-requirement.html"
@@ -183,7 +223,7 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-guide-id="create-license" data-guide-tags="license,credentials,faculty">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="education-articles/create-license-requirement.html"
@@ -197,7 +237,7 @@
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4" data-guide-id="faq" data-guide-tags="faq,questions,answers">
             <a
               class="card h-100 shadow-sm border-0 text-decoration-none text-reset"
               href="education-faq.html"
@@ -233,6 +273,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="../../js/education-guide-search.js"></script>
     <script src="../../js/site-footer.js"></script>
   </body>
 </html>
