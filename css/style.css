@@ -113,6 +113,16 @@ main .container {
   transform: translateY(-4px);
   box-shadow: 0 1rem 2rem rgba(16, 24, 40, 0.1);
 }
+
+.hover-lift-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift-card:hover,
+.hover-lift-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(16, 24, 40, 0.1);
+}
 .requirements-grid {
   column-count: 1;
   column-gap: 1.5rem;
