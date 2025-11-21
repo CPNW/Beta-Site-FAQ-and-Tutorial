@@ -46,6 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "student-requirements.html",
       tags: ["status", "pending", "expired", "upload"],
     },
+    {
+      title: "Accepted Documentation Formats",
+      description: "See required data points, approved file types, and examples of acceptable uploads before you submit.",
+      url: "accepted-document-formats.html",
+      tags: ["documents", "uploads", "formats", "examples"],
+    },
   ];
 
   const renderArticleResults = (term) => {
