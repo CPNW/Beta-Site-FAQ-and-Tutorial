@@ -47,13 +47,33 @@
             <div class="navbar-nav">
               <a class="nav-link" href="../../../index.html">Home</a>
               <div class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   FAQs
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
-                  <li><a class="dropdown-item" href="../../education-views/education-faq.html">Education Coordinator FAQ</a></li>
-                  <li><a class="dropdown-item" href="#">Healthcare Coordinator FAQ</a></li>
-                  <li><a class="dropdown-item" href="student-faq.html">Student FAQ</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../../education-views/education-faq.html"
+                      >Education Coordinator FAQ</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Healthcare Coordinator FAQ</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="student-faq.html"
+                      >Student FAQ</a
+                    >
+                  </li>
                 </ul>
               </div>
               <a class="nav-link" href="#">Tutorials</a>
@@ -374,6 +394,38 @@
               </div>
             </div>
           </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqSixHeading">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqSixCollapse"
+                aria-expanded="false"
+                aria-controls="faqSixCollapse"
+              >
+                My account is archived. How do I reactivate it?
+              </button>
+            </h2>
+            <div
+              id="faqSixCollapse"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqSixHeading"
+              data-bs-parent="#studentFaqAccordion"
+            >
+              <div class="accordion-body">
+                Accounts are automatically archived after a period of
+                inactivity. Archived student accounts can only be reactivated at
+                the request of your program&rsquo;s clinical coordinator. Ask
+                your coordinator to email
+                <a href="mailto:support@cpnw.org">support@cpnw.org</a> and
+                request that your account be restored. Once CPNW Support
+                processes the request, you&rsquo;ll need to log in within 48
+                hours to prevent the system from automatically archiving your
+                account again.
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="text-center mt-4">
@@ -385,12 +437,21 @@
     </main>
 
     <hr class="quote-divider" />
-    <blockquote class="site-quote text-muted" data-inspiration-quote></blockquote>
+    <blockquote
+      class="site-quote text-muted"
+      data-inspiration-quote
+    ></blockquote>
 
     <footer class="site-footer text-center py-4">
       <div class="container">
-        <p class="mb-1">&copy; <span data-current-year></span> Clinical Placements Northwest</p>
-        <a href="mailto:support@cpnw.org" class="text-white text-decoration-none">support@cpnw.org</a>
+        <p class="mb-1">
+          &copy; <span data-current-year></span> Clinical Placements Northwest
+        </p>
+        <a
+          href="mailto:support@cpnw.org"
+          class="text-white text-decoration-none"
+          >support@cpnw.org</a
+        >
       </div>
     </footer>
 
@@ -400,6 +461,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../../../js/student-faq-search.js"></script>
-      <script src="../../../js/site-footer.js"></script>
-</body>
+    <script src="../../../js/site-footer.js"></script>
+  </body>
 </html>
